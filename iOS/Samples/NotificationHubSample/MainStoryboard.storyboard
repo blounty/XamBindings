@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Notification Hub Sample View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="NotificationHubSampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                                <rect key="frame" x="100" y="109" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1WX-aB-lCZ"/>
+                                    <constraint firstAttribute="height" constant="120" id="ZED-Uv-Afp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                                <rect key="frame" x="20" y="297" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.66666666666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="AqL-hP-NLh"/>
+                                    <constraint firstAttribute="width" secondItem="5" secondAttribute="height" multiplier="280:47" id="VuI-83-YKh"/>
+                                    <constraint firstAttribute="height" constant="47" id="rGz-1D-6aw"/>
+                                </constraints>
+                                <state key="normal" title="Increment">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5" firstAttribute="top" secondItem="69" secondAttribute="bottom" constant="68" id="2FL-sL-Go7"/>
+                            <constraint firstItem="69" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="89" id="5Cu-kh-p6X"/>
+                            <constraint firstAttribute="centerX" secondItem="69" secondAttribute="centerX" id="RxA-14-MVQ"/>
+                            <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="yzT-20-pKY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EarthImageView" destination="69" id="name-outlet-69"/>
+                        <outlet property="IncrementButton" destination="5" id="name-outlet-5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earth" width="210" height="210"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

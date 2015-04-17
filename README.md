@@ -7,6 +7,8 @@ Android
 
 Picasso - http://square.github.io/picasso/
 
+SwipeListview - https://github.com/baoyongzhang/SwipeMenuListView
+
 
 iOS
 ---

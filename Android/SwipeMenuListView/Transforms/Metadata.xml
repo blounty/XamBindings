@@ -1,0 +1,21 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='android.support.v4.app']/class[@name='NotificationCompat']" />
+  <remove-node path="/api/package[@name='android.support.v4.view']/class[@name='PagerTitleStrip']" />
+  <remove-node path="/api/package[@name='android.support.v4.view']/class[@name='ViewPager']" />
+  <remove-node path="/api/package[@name='android.support.v4.util']/class[@name='ArrayMap']" />
+  <remove-node path="/api/package[@name='android.support.v4.internal.view']/interface[@name='SupportMenuItem']" />
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']" />
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  <remove-node path="/api/package[@name='android.support.v4.app']/class[@name='NotificationCompat.Action']/method[@name='getRemoteInputs' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='android.support.v4.widget']/class[@name='CursorAdapter']/field[@name='mCursorFilter']" />
+  <remove-node path="/api/package[@name='android.support.v4.app']/class[@name='FragmentActivity.FragmentTag']/field[@name='Fragment_tag']" />
+
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='RemoteInput']/method[@name='getChoices' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='RemoteInput']/method[@name='getResultKey' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='RemoteInput']/method[@name='getLabel' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='RemoteInput']/method[@name='getExtras' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='NotificationCompat.Action']/method[@name='getExtras' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='android.support.v4.app']/class[@name='RemoteInput']/method[@name='getAllowFreeFormInput' and count(parameter)=0]" name="visibility">protected</attr>
+
+  <attr path="/api/package[@name='com.baoyz.swipemenulistview']" name="managedName">Baoyz</attr>
+</metadata>

@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FDBA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicassoSample", "Android\Samples\PicassoSample\PicassoSample.csproj", "{CDA0F12B-3F1E-42E2-B683-2E438590101E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwipeMenuListViewSample", "Android\Samples\PicassoSample\SwipeMenuListViewSample\SwipeMenuListViewSample.csproj", "{E46BFFFF-4DCD-4409-B37A-043E6D770282}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwipeMenuListViewSample", "Android\Samples\SwipeMenuListViewSample\SwipeMenuListViewSample.csproj", "{E46BFFFF-4DCD-4409-B37A-043E6D770282}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picasso", "Android\Picasso\Picasso.csproj", "{C90DBFBD-6BF4-4CE8-B487-64017D0E87E5}"
 EndProject

@@ -65,7 +65,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SwipeMenuListView\SwipeMenuListView.csproj">
+    <ProjectReference Include="..\..\SwipeMenuListView\SwipeMenuListView.csproj">
       <Project>{771A579B-0925-47CE-AF4F-DBD4D42D2ECD}</Project>
       <Name>SwipeMenuListView</Name>
     </ProjectReference>

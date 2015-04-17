@@ -1,2 +1,0 @@
-/Users/alexb/Projects/XamBindings/Android/Samples/PicassoSample/SwipeMenuListViewSample/bin/Debug/SwipeMenuListViewSample.dll
-/Users/alexb/Projects/XamBindings/Android/SwipeMenuListView/bin/Debug/SwipeMenuListView.dll

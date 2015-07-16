@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>NotificationHubSample</string>
+	<string>LocFakeSample</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.your-company.NotificationHubSample</string>
+	<string>com.your-company.LocFakeSample</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -34,5 +34,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Give me place</string>
 </dict>
 </plist>

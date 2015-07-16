@@ -4,11 +4,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{BF1048B2-E2F9-40F6-B728-DC6DD0C66494}</ProjectGuid>
+    <ProjectGuid>{06951317-4A83-4B12-A83E-57891B3FF431}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NotificationHubSample</RootNamespace>
+    <RootNamespace>LocFakeSample</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>NotificationHubSample</AssemblyName>
+    <AssemblyName>LocFakeSample</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,13 +21,8 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchProfiling>true</MtouchProfiling>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <MtouchI18n>
-    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -35,11 +30,9 @@
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,8 +46,11 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Andrew Maloney (D8FRULM69Y)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -101,10 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\Earth.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\Earth.imageset\earth.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Earth.imageset\earth-1.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Earth.imageset\earth-1-1.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -117,16 +109,19 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="NotificationHubSampleViewController.cs" />
-    <Compile Include="NotificationHubSampleViewController.designer.cs">
-      <DependentUpon>NotificationHubSampleViewController.cs</DependentUpon>
+    <Compile Include="LocFakeSampleViewController.cs" />
+    <Compile Include="LocFakeSampleViewController.designer.cs">
+      <DependentUpon>LocFakeSampleViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\NotificationHub\NotificationHub.csproj">
-      <Project>{D785964C-F62E-42B9-9620-F9F10C45BCF5}</Project>
-      <Name>NotificationHub</Name>
+    <ProjectReference Include="..\..\LocFake\LocFake.csproj">
+      <Project>{DFC24A5F-B1F7-4B17-ACB1-818CAAAA78F6}</Project>
+      <Name>LocFake</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ashland.gpx" />
   </ItemGroup>
 </Project>

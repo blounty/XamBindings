@@ -27,7 +27,7 @@ namespace Samples
         {
             base.ViewDidLoad();
 			
-            var cache = HNKCache.SharedCache();
+            var cache = HNKCache.SharedCache;
             HNKCacheFormat format = (HNKCacheFormat)cache.Formats["thumbnail"];
             if (format == null)
             {
@@ -42,7 +42,7 @@ namespace Samples
             }
 
 
-            HanekeImageView.SetCacheFormat(format);
+            HanekeImageView.SetCacheFormat (format);
             HanekeImageView.SetImage(new NSUrl("http://images.kpopstarz.com/data/images/full/190451/katy-perry-sex-bomb.png?w=300"), UIImage.FromBundle("41015.png") );
             HanekeButton.SetBackgroundImage(new NSUrl("http://images.kpopstarz.com/data/images/full/190451/katy-perry-sex-bomb.png?w=300"), UIControlState.Normal, UIImage.FromBundle("41015.png"));
         }

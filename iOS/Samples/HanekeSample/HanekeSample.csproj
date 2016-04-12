@@ -55,13 +55,14 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignKey>iPhone Developer: Alex Blount (JDMM564V8V)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchI18n>
     </MtouchI18n>
     <IpaPackageName>
     </IpaPackageName>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignProvision>b85766c7-e5c4-4f28-9b19-372bedce59f9</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -130,12 +131,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <BundleResource Include="Resources\41015%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Haneke\Haneke.csproj">
       <Project>{04CF5930-7308-4BD2-95C3-9C9E611025BA}</Project>
       <Name>Haneke</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\41015%402x.png" />
   </ItemGroup>
 </Project>

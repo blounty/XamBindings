@@ -1,32 +1,39 @@
-﻿using ObjCRuntime;
+﻿using System;
+using ObjCRuntime;
+using UIKit;
 
 [Native]
-public enum HNKScaleMode : long /* nint */ {
-    Fill = 0,
-    AspectFit = 1,
-    AspectFill = 2,
+public enum HNKScaleMode : long
+{
+    Fill = UIViewContentMode.ScaleToFill,
+    AspectFit = UIViewContentMode.ScaleAspectFit,
+    AspectFill = UIViewContentMode.ScaleAspectFill,
     None
 }
 
 [Native]
-public enum HNKPreloadPolicy : long /* nint */ {
+public enum HNKPreloadPolicy : long
+{
     None,
     LastSession,
     All
 }
-/*
-public enum <unamed-C-enum> {
-    HNKErrorImageNotFound = -100,
-    HNKErrorFetcherMustReturnImage = -200,
-    HNKErrorDiskCacheCannotReadImageFromData = -300
+
+public enum HNKError
+{
+    ImageNotFound = -100,
+    FetcherMustReturnImage = -200,
+    DiskCacheCannotReadImageFromData = -300
 }
 
-public enum <unamed-C-enum> {
+public enum HNKErrorDiskFetcher
+{
     HNKErrorDiskFetcherInvalidData = -500
 }
 
-public enum <unamed-C-enum> {
-    HNKErrorNetworkFetcherInvalidData = -400,
-    HNKErrorNetworkFetcherMissingData = -401,
-    HNKErrorNetworkFetcherInvalidStatusCode = -402
-}*/
+public enum HNKErrorNetworkFetcher
+{
+    InvalidData = -400,
+    MissingData = -401,
+    InvalidStatusCode = -402
+}
